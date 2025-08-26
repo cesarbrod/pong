@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="instructions">
+            <h1>PONG</h1>
+            <div class="controls">
+                <div class="player-controls">
+                    <h3>Left Player</h3>
+                    <p>A - Move Up</p>
+                    <p>Z - Move Down</p>
+                </div>
+                <div class="player-controls">
+                    <h3>Right Player</h3>
+                    <p>↑ - Move Up</p>
+                    <p>↓ - Move Down</p>
+                </div>
+            </div>
+            <button id="startBtn">Start Game</button>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        
+        <div class="score">
+            <span id="leftScore">0</span>
+            <span class="separator">-</span>
+            <span id="rightScore">0</span>
+        </div>
+        
+        <div id="gameOver" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p id="winner"></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
